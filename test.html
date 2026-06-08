@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Max</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet"/>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #chat { height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="chat"></div>
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    createChat({
+      webhookUrl: 'https://n8n.srv1163870.hstgr.cloud/webhook/79723dfd-52fa-4e30-8def-23c0b48aebab/chat',
+      target: '#chat',
+      mode: 'fullscreen'
+    });
+  </script>
+</body>
+</html>
